@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 3 Project Form Page</title>
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Link to jQuery library -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- Link to Bootstrap JavaScript bundle -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Week 3 Project</a> 
+            <a class="navbar-brand" href="index.html">Week 3 Project</a>
+            <!-- Toggler button for collapsing the navbar on small screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar1" aria-controls="defaultNavbar1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>    
-
+            </button>
+            <!-- Collapsible part of the navbar -->
             <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <!-- Navigation links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Form</a>
@@ -30,34 +36,40 @@
         </div>
     </nav>
 
+    <!-- Alert message -->
     <div class="alert alert-primary mt-2" role="alert" style="text-align: center;">
         Please fill out the form below.
-    </div>  
+    </div>
 
+    <!-- Container for the form -->
     <div class="container">
+        <!-- Form element with POST method to submit data to results.html -->
         <form action="results.html" method="post">
+            <!-- Form group for input fields -->
             <div class="form-group" style="padding-bottom: 10px;">
                 <div class="row">
+                    <!-- Input field for first name -->
                     <div class="col-md-4">
                         <label for="firstName">First Name</label>
                         <input type="text" class="form-control" id="firstName" name="firstName">
                     </div>
+                    <!-- Input field for last name -->
                     <div class="col-md-4">
                         <label for="lastName">Last Name</label>
                         <input type="text" class="form-control" id="lastName" name="lastName">
                     </div>
+                    <!-- Input field for email -->
                     <div class="col-md-4">
                         <label for="email">Email</label>
                         <input type="email" class="form-control" id="email" name="email">
                     </div>
                 </div>
             </div>
+            <!-- Submit button centered using text-center class -->
             <div class="text-center">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
     </div>
-
-
 </body>
 </html>

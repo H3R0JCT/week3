@@ -4,19 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Week 3 Project Results Page</title>
+    <!-- Link to Bootstrap CSS for styling -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Link to jQuery library -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
+    <!-- Link to Bootstrap JavaScript bundle -->
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="index.html">Week 3 Project</a> 
+            <!-- Toggler button for collapsing the navbar on small screens -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#defaultNavbar1" aria-controls="defaultNavbar1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>    
-
+            <!-- Collapsible part of the navbar -->
             <div class="collapse navbar-collapse" id="defaultNavbar1">
+                <!-- Navigation links -->
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a href="index.html" class="nav-link">Form</a>
@@ -29,18 +35,22 @@
         </div>
     </nav>
 
-
+    <!-- Container for the results table -->
     <div class="container">
-        <div class="container-fluid h1" style="text-align: center; padding-bottom: 10px; padding-top: 10px;" >Results</div>
+        <!-- Header for the results section -->
+        <div class="container-fluid h1" style="text-align: center; padding-bottom: 10px; padding-top: 10px;">Results</div>
+        <!-- Table to display the results -->
         <table class="table table-striped table-dark table-bordered table-hover">
             <thead>
                 <tr>
+                    <!-- Table headers -->
                     <th>First Name</th>
                     <th>Last Name</th>
                     <th>Email</th>
                 </tr>
             </thead>
             <tbody>
+                <!-- Example data rows -->
                 <tr>
                     <td>John</td>
                     <td>Doe</td>
@@ -55,12 +65,9 @@
                     <td>James</td>
                     <td>Johnson</td>
                     <td>james@james.com</td>
-                </tr> 
-
+                </tr>
             </tbody>
         </table>
     </div>
-
-
 </body>
 </html>
